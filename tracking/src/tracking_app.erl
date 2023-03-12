@@ -16,7 +16,7 @@ start(_Type, _Args) ->
         ]}
     ]),
 
-PrivDir = code:priv_dir(db_access),
+PrivDir = code:priv_dir(tracking),
 {ok,_} = cowboy:start_tls(https_listener, [
     {port, 443},
     {certfile, PrivDir ++ "/ssl/fullchain.pem"},
