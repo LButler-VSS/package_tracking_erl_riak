@@ -12,7 +12,7 @@
 start(_Type, _Args) ->
     Dispatch = cowboy_router:compile([
         {'_', [
-           {"/", start_tracking_h, []}
+           {"/", store_package_info_h, []}
         ]}
     ]),
 
